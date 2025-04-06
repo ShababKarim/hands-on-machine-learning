@@ -1,0 +1,12 @@
+name: ch_3_env
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - ipykernel
+  - matplotlib
+  - numpy
+  - pandas
+  - scikit-learn
+  - jupyter
+prefix: /opt/homebrew/anaconda3/envs/ch_3_env
