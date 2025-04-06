@@ -6,9 +6,18 @@ Collection of jupyter notebooks following the third edition of the O'Reilly book
 <a href="https://homl.info/er3"><img src="https://learning.oreilly.com/library/cover/9781098125967/300w/" title="book" width="150" border="0" /></a>
 
 ## Quick Start
+1. Navigate to the one of the chapter directories
+2. Run the following
 
-1. Navigate to any of the chapter directories
-2. Create & activate a virtual environment
-3. Start running the code cells!
+```bash
+# Create environment from environment.yml
+conda env create --name myenv -f environment.yml
+
+# Activate the environment
+conda activate myenv
+
+# Register the environment as a Jupyter kernel
+python -m ipykernel install --user --name myenv-kernel --display-name "Python (myenv)"
+```
 
 *note: In some cases the input data may be too large to include in the repository. I'll add a comment at the top of those notebooks on how to retrieve the data.*
