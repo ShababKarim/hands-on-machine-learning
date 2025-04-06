@@ -11,13 +11,13 @@ Collection of jupyter notebooks following the third edition of the O'Reilly book
 
 ```bash
 # Create environment from environment.yml
-conda env create --name myenv -f environment.yml
+conda env create -f environment.yml
 
 # Activate the environment
-conda activate myenv
+conda activate <env>
 
 # Register the environment as a Jupyter kernel
-python -m ipykernel install --user --name myenv-kernel --display-name "Python (myenv)"
+python -m ipykernel install --user --name <env>-kernel --display-name "Python (<env>)"
 ```
 
 *note: In some cases the input data may be too large to include in the repository. I'll add a comment at the top of those notebooks on how to retrieve the data.*
